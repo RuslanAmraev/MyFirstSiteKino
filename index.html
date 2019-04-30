@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="Styles/all.css">
+</head>
+<body>
+	<div class="modal-in" id="SignIn">
+		<div onclick="ShowSignIn()" class="modal-backdrop"></div>
+		<div class="modal-inner">
+			<div onclick="ShowSignIn()" class="modal-close">
+				x
+			</div>
+			<h3>Sign in</h3>
+			<fieldset class="modal-sign-in-input">		
+				<input type="text" placeholder="Email address">
+			</fieldset>
+			<fieldset class="modal-sign-in-input">
+				<input type="text" placeholder="Password">
+			</fieldset>
+			<div class="modal-sign-button">Sign in</div>
+		</div>
+	</div>
+	<div class="modal-in" id="SignUp">
+		<div onclick="ShowSignUp()" class="modal-backdrop"></div>
+		<div class="modal-inner">
+			<div onclick="ShowSignUp()" class="modal-close">
+				x
+			</div>
+			<h3>Sign up</h3>
+			<div style="text-align:center; margin-top: 10px;">Enter your email address</div>
+			<fieldset class="modal-sign-up-input">	
+				<input type="text" placeholder="Email address">
+			</fieldset>
+			<div style="text-align:center; margin-top: 10px;">Create a password</div>
+			<fieldset class="modal-sign-up-input">
+				<input type="text" placeholder="Password">
+			</fieldset>
+			<fieldset class="modal-sign-up-input">
+				<input type="text" placeholder="Retry Password">
+			</fieldset>
+			<div class="modal-sign-button">Sign up</div>
+		</div>
+	</div>
+	<div  onclick="showPlayer('player-1','')" id="player-1" class="player">
+		<img onclick="showPlayer('player-1','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/6LHH_N4_ycI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	
+	<div  onclick="showPlayer('player-2','')" id="player-2" class="player">
+		<img onclick="showPlayer('player-2','')" class="close-player" src="Images/close.png">
+		<iframe width="720" height="480" src="https://www.youtube.com/embed/b306jk-C5rE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	
+	<div  onclick="showPlayer('player-3','')" id="player-3" class="player">
+		<img onclick="showPlayer('player-3','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/LoebZZ8K5N0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-4','')" id="player-4" class="player">
+		<img onclick="showPlayer('player-4','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/HSzx-zryEgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	
+	<div  onclick="showPlayer('player-5','')" id="player-5" class="player">
+		<img onclick="showPlayer('player-5','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/dKrVegVI0Us" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-6','')" id="player-6" class="player">
+		<img onclick="showPlayer('player-6','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/0tkLUap7oGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-7','')" id="player-7" class="player">
+		<img onclick="showPlayer('player-7','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/GZ0Bey4YUGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-8','')" id="player-8" class="player">
+		<img onclick="showPlayer('player-8','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/LbduDRH2m2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-9','')" id="player-9" class="player">
+		<img onclick="showPlayer('player-9','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/LKFuXETZUsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-10','')" id="player-10" class="player">
+		<img onclick="showPlayer('player-10','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/Ohq6NmKMja8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-11','')" id="player-11" class="player">
+		<img onclick="showPlayer('player-11','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/ViuDsy7yb8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div  onclick="showPlayer('player-12','')" id="player-12" class="player">
+		<img onclick="showPlayer('player-12','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/u9Mv98Gr5pY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div onclick="showPlayer('player-13','')" id="player-13" class="player">
+		<img onclick="showPlayer('player-13','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/1bq0qff4iF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div onclick="showPlayer('player-14','')" id="player-14" class="player">
+		<img onclick="showPlayer('player-14','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/EXeTwQWrcwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>		
+	<div onclick="showPlayer('player-15','')" id="player-15" class="player">
+		<img onclick="showPlayer('player-15','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/VZZ0PnDZdZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	
+	<div  onclick="showPlayer('player-16','')" id="player-16" class="player">
+		<img onclick="showPlayer('player-16','')" class="close-player" src="Images/close.png">
+		<iframe class="video" width="720" height="480" src="https://www.youtube.com/embed/C4qgAaxB_pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<header class="header">
+			<div class="header-logo">				
+				<img src="Images/logo.png">
+			</div>
+			<div class="header-buttons">
+				<div class="find">
+					<div onclick="ShowInput('show')" class="search-icon">
+						<img src="Images/Search Icon.svg">
+					</div>	
+					<div id="find" class="input-non-active">
+						<input class="input" type="text" placeholder="Find...">
+					</div>
+				</div>
+				<div onclick="ShowSignIn('Show')" class="header-button">
+					Sign in
+				</div>
+				<div onclick="ShowSignUp('Show')" class="header-button">
+					Sign up
+				</div>
+			</div>
+	</header>
+	<section id="main-1" class="main">
+		<div class="main-menu container">
+			<div class="main-film">
+				<h1>THE JUNGLE BOOK</h1>
+					<ul>
+					<li>Adventure</li>
+					<li>Drame</li>
+					<li>Family</li>
+					<li>Fantasy</li>
+					<li>|</li>
+					<li>1h 45m</li>
+				</ul>
+				<div class="rating">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<span class="rating-option">4.8</span>
+				</div>
+			</div>
+			<div class="main-film--menu">
+				<div onclick="showPlayer('player-16','show')" class="buttons-style">Watch Now</div>
+				<div onclick="scrollPage('jb'), setTimeout(function() {ShowInfo('show', '231', '232')}, 900);" class="buttons-style">View Info</div>
+				<div class="buttons-style">+ Favorites</div>				
+			</div>
+			<img class="main-film--menu---icon" src="Images/More.png">
+		</div>
+	</section>	
+	<section id="main-2" class="main-2">
+		<div class="main-menu container">
+			<div class="main-film">
+				<h1>Teenage Mutant Ninja Turtles</h1>
+					<ul>
+					<li>Action</li>
+					<li>Adventure</li>
+					<li>Comedy</li>
+					<li>|</li>
+					<li>1h 41m</li>
+				</ul>
+				<div class="rating">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<span class="rating-option">4.8</span>
+				</div>
+			</div>
+			<div class="main-film--menu">
+				<div onclick="showPlayer('player-15','show')" class="buttons-style">Watch Now</div>
+				<div onclick="scrollPage('tmnt'), setTimeout(function() {ShowInfo('show', '229', '230')}, 900);" class="buttons-style">View Info</div>
+				<div class="buttons-style">+ Favorites</div>				
+			</div>
+			<img class="main-film--menu---icon" src="Images/More.png">
+		</div>
+	</section>
+	<section id="main-3" class="main-3">
+		<div class="main-menu container">
+			<div class="main-film">
+				<h1>The Dark Knight</h1>
+					<ul>
+					<li>Action</li>
+					<li>Crime</li>
+					<li>Drama</li>
+					<li>|</li>
+					<li>2h 32m</li>
+				</ul>
+				<div class="rating">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<span class="rating-option">4.8</span>
+				</div>
+			</div>
+			<div class="main-film--menu">
+				<div onclick="showPlayer('player-14','show')" class="buttons-style">Watch Now</div>
+				<div onclick="scrollPage('batman'), setTimeout(function() {ShowInfo('show', '227', '228')}, 900);" class="buttons-style">View Info</div>
+				<div class="buttons-style">+ Favorites</div>				
+			</div>
+			<img class="main-film--menu---icon" src="Images/More.png">
+		</div>
+	</section>
+	<section id="main-4" class="main-4">
+		<div class="main-menu container">
+			<div class="main-film">
+				<h1>Harry Potter and the Chamber of Secrets</h1>
+					<ul>	
+					<li>Adventure</li>
+					<li>Family</li>
+					<li>Fantasy</li>
+					<li>|</li>
+					<li>2h 41m</li>
+				</ul>
+				<div class="rating">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<img src="Images/Star.png">
+					<span class="rating-option">4.8</span>
+				</div>
+			</div>
+			<div class="main-film--menu">
+				<div onclick="showPlayer('player-13','show')" class="buttons-style">Watch Now</div>
+				<div onclick="scrollPage('hp'), setTimeout(function() {ShowInfo('show', '225', '226')}, 900);" class="buttons-style">View Info</div>
+				<div class="buttons-style">+ Favorites</div>				
+			</div>
+			<img class="main-film--menu---icon" src="Images/More.png">
+		</div>
+	</section>
+	<section class="films">
+		<div class="container">
+			<div class="menu-films">
+				<div class="menu-films-item">Trending</div>
+				<div class="menu-films-item">Top Rated</div>
+				<div class="menu-films-item">New Aririvals</div>
+				<div class="menu-films-item">Trailers</div>
+				<div class="menu-films-item">Coming Soon</div>
+				<div class="menu-films-item genres-div">
+					Genre<img src="Images/shape-down.png">
+					<div class="genres-box">
+						<ul class="genres">
+							<li>Action</li>
+							<li>Family</li>
+							<li>Comedy</li>
+							<li>Adventure</li>
+						</ul>
+					</div>
+				</div>	
+				<div class="sort">
+					<img onclick="sort('table')" src="Images/Table.png">
+					<img onclick="sort('lines')" src="Images/lines.png">
+				</div>
+			</div>
+			<hr>
+				<div class="blocks">
+					<div id="line-block-1" class="block-line">
+						<div class="block-line--img1">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-13', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Daniel Redcliff.jpg">
+									<p>Daniel Radcliffe</p>
+								</div>
+								<div>
+									<img src="Images/actors/Rupert Grint.jpg">
+									<p>Rupert Grint</p>
+								</div>
+								<div>
+									<img src="Images/actors/Emma Watson.jpg">
+									<p>Emma Watson</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="block">
+						<div class="block-img1"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-1', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '201', '202')">View info</p>
+						</div>	
+						<div id="201" 	class="block-info-bg1"></div>
+						<div id="202" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '201', '202')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found. </p>
+							<div onclick="showPlayer('player-1', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>	 		
+					</div>
+					<div id="line-block-1" class="block-line">
+						<div class="block-line--img2">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-2', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Jesse Eisenberg.jpg">
+									<p>Jesse Eisenberg</p>
+								</div>
+								<div>
+									<img src="Images/actors/Woody Harrelson.jpg">
+									<p>Woody Harrelson</p>
+								</div>
+								<div>
+									<img src="Images/actors/Morgan Freeman.jpg">
+									<p>Morgan Freeman</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="block">
+						<div class="block-img2"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-2', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '203', '204')">View info</p>
+						</div>	
+						<div id="203" 	class="block-info-bg2"></div>
+						<div id="204" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '203', '204')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-2', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>			
+					</div>
+					<div id="line-block-1" class="block-line">
+						<div class="block-line--img3">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-14', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Christian Bale.jpg">
+									<p>Christian Bale</p>
+								</div>
+								<div>
+									<img src="Images/actors/Anne Hathaway.png">
+									<p>Anne Hathaway</p>
+								</div>
+								<div>
+									<img src="Images/actors/Heath Ledger.jpg">
+									<p>Heath Ledger</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="block">
+						<div class="block-img3"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-3', 'show')" src="Images/play.png">
+							<h3 onclick="showPlayer('player-3', 'show')">Whatch now</h3>
+							<p onclick="ShowInfo('show', '205', '206')">View info</p>
+						</div>
+						<div id="205" 	class="block-info-bg3"></div>
+						<div id="206" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '205', '206')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-3', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>
+					<div id="line-block-1" class="block-line">
+						<div class="block-line--img4">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-1', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Michael.jpg">
+									<p>Michael Fassbender</p>
+								</div>
+								<div>
+									<img src="Images/actors/Marion_Cotillard.jpg">
+									<p>Marion Cotillard</p>
+								</div>
+								<div>
+									<img src="Images/actors/Brendan Gleeson.jpg">
+									<p>Brendan Gleeson</p>
+								</div>
+							</div>
+						</div>	
+					</div>			
+					<div class="block">
+						<div class="block-img4"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-4', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '207', '208')">View info</p>
+						</div>
+						<div id="207" 	class="block-info-bg4"></div>
+						<div id="208" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '207', '208')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-4', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>
+				</div>
+				<div class="blocks">
+					<div class="block">
+						<div class="block-img5"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-5', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '209', '210')">View info</p>
+						</div>
+						<div id="209" 	class="block-info-bg5"></div>
+						<div id="210" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '209', '210')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-5', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>
+					<div id="line-block-1" class="block-line">
+						<div class="block-line--img5">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-11', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Eddie Redmayne.jpg">
+									<p>Eddie Redmayne</p>
+								</div>
+								<div>
+									<img src="Images/actors/Matthew Sim.jpg">
+									<p>Matthew Sim</p>
+								</div>
+								<div>
+									<img src="Images/actors/Katherine Waterston.jpg">
+									<p>Katherine Waterston</p>
+								</div>
+							</div>
+						</div>	
+					</div>				
+					<div class="block">
+						<div class="block-img6"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-6', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '211', '212')">View info</p>
+						</div>
+						<div id="211" 	class="block-info-bg6"></div>
+						<div id="212" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '211', '212')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-6', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>				
+					<div class="block">
+						<div class="block-img7"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-7', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '213', '214')">View info</p>
+						</div>
+						<div id="213" 	class="block-info-bg7"></div>
+						<div id="214" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '213', '214')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-7', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>							
+					<div class="block">
+						<div class="block-img8"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-8', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '215', '216')">View info</p>
+						</div>
+						<div id="215" 	class="block-info-bg8"></div>
+						<div id="216" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '215', '216')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-8', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>	
+				</div>
+				<div class="blocks">				
+					<div class="block">
+						<div class="block-img9"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-9', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '217', '218')">View info</p>
+						</div>
+						<div id="217" 	class="block-info-bg9"></div>
+						<div id="218" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '217', '218')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-9', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>
+					<div class="block">
+						<div class="block-img10"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-10', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '219', '220')">View info</p>
+						</div>
+						<div id="219" 	class="block-info-bg10"></div>
+						<div id="220" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '219', '220')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-10', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>
+					<div class="block">
+						<div class="block-img11"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-11', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '221', '222')">View info</p>
+						</div>
+						<div id="221" 	class="block-info-bg11"></div>
+						<div id="222" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '221', '222')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-11', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>		
+					<div class="block">
+						<div class="block-img12"></div>
+						<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+						<div class="block-info">							
+							<img onclick="showPlayer('player-12', 'show')" src="Images/play.png">
+							<h3>Whatch now</h3>
+							<p onclick="ShowInfo('show', '223', '224')">View info</p>
+						</div>
+						<div id="223" 	class="block-info-bg12"></div>
+						<div id="224" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '223', '224')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-12', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+					</div>				
+				</div> 
+				<div class="subscribe">
+					<h4>Receive information on the latest hit movies straight to your inbox.</h4>
+					<div>Subscribe!</div>
+				</div>
+					<div class="blocks">
+						<div id="line-block-1" class="block-line">
+						<div class="block-line--img6">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-3', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Leonardo DiCaprio.jpg">
+									<p>Leonardo Di Caprio</p>
+								</div>
+								<div>
+									<img src="Images/actors/Will Poulter.jpg">
+									<p>Will Poulter</p>
+								</div>
+								<div>
+									<img src="Images/actors/Tom Hardy.jpg">
+									<p>Tom Hardy</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+						<div id="hp" class="block">
+							<div class="block-img13"></div>
+							<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+							<div class="block-info">							
+								<img onclick="showPlayer('player-13', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+								<p onclick="ShowInfo('show', '225', '226')">View info</p>
+							</div>
+							<div id="225" 	class="block-info-bg13"></div>
+							<div id="226" class="block-info-item">					
+								<div class="block-info-item-menu">
+									<img onclick="ShowInfo('', '225', '226')" src="Images/close 1.png">
+									<div class="block-info-item-menu-buttons">
+										<div>+Favorites</div>
+										<img src="Images/More.png">
+									</div>
+								</div>
+								<div class="block-dlya-flexa">
+									<div>
+										<div class="block-info-film-name">Nazvanye filma</div>
+										<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+									</div>
+									<div class="block-info-rating">4.2</div>
+								</div>
+								<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+								<div onclick="showPlayer('player-13', 'show')" class="buttons-style button-info">Watch now</div>
+							</div>
+						</div>
+						<div id="line-block-1" class="block-line">
+						<div class="block-line--img7">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-5', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Chris Evans.jpg">
+									<p>Chris Evans</p>
+								</div>
+								<div>
+									<img src="Images/actors/Robert Downey Jr..jpg">
+									<p>Robert Downey Jr.</p>
+								</div>
+								<div>
+									<img src="Images/actors/Scarlett Johansson.jpg">
+									<p>Scarlett Johansson</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+						<div id="batman" class="block">
+							<div class="block-img14"></div>
+							<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+							<div class="block-info">							
+								<img onclick="showPlayer('player-14', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+								<p onclick="ShowInfo('show', '227', '228')">View info</p>
+							</div>
+							<div id="227" 	class="block-info-bg14"></div>
+						<div id="228" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '227', '228')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-14', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>
+						</div>
+						<div id="line-block-1" class="block-line">
+						<div class="block-line--img8">
+							<div class="block-item--line">							
+								<img onclick="showPlayer('player-15', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+							</div>	
+						</div>	
+						<div style="display: block; width: 60%;">				
+							<div class="block-film--info">
+								<div class="film-name-line">
+									<div>
+										<h1>now you can see me</h1>
+										<div class="film-name--genres">Action, Adventure, Comedy</div>
+									</div>
+									<div class="rating-box">	
+										<span class="rating-set">4.4</span>
+									</div>
+								</div>
+								<p class="film-info">There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>	
+							</div>
+							<div class="film-roles">
+								<h2>Cast</h2>
+								<div>
+									<img src="Images/actors/Megan Fox.jpg">
+									<p>Megan Fox</p>
+								</div>
+								<div>
+									<img src="Images/actors/William Fichtner.jpg">
+									<p>William Fichtner</p>
+								</div>
+								<div>
+									<img src="Images/actors/Whoopi Goldberg.jpg">
+									<p>Whoopi Goldberg</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+						<div id="tmnt"class="block">
+							<div class="block-img15"></div>
+							<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+							<div class="block-info">							
+								<img onclick="showPlayer('player-15', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+								<p onclick="ShowInfo('show', '229', '230')">View info</p>
+							</div>
+							<div id="229" 	class="block-info-bg15"></div>
+						<div id="230" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '229', '230')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-15', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>
+						</div>
+						<div id="jb" class="block">
+							<div class="block-img16"></div>
+							<div class="film-name">
+							<div>
+								<h1>now you can see me</h1>
+								<div class="film-name--genres">Action, Adventure, Comedy</div>
+							</div>
+							<div class="rating-box">	
+								<span class="rating-set">4.4</span>
+							</div>
+						</div>
+							<div class="block-info">							
+								<img onclick="showPlayer('player-16', 'show')" src="Images/play.png">
+								<h3>Whatch now</h3>
+								<p onclick="ShowInfo('show', '231', '232')">View info</p>
+							</div>
+							<div id="231" 	class="block-info-bg16"></div>
+						<div id="232" class="block-info-item">					
+							<div class="block-info-item-menu">
+								<img onclick="ShowInfo('', '231', '232')" src="Images/close 1.png">
+								<div class="block-info-item-menu-buttons">
+									<div>+Favorites</div>
+									<img src="Images/More.png">
+								</div>
+							</div>
+							<div class="block-dlya-flexa">
+								<div>
+									<div class="block-info-film-name">Nazvanye filma</div>
+									<div class="block-info-film-genres">Action, Adventure, Fantasy</div>
+								</div>
+								<div class="block-info-rating">4.2</div>
+							</div>
+							<p>There are growing dangers in the wizarding world of 1926 New York.  Something mysterious is leaving a path of destruction in the streets, threatening to expose the wizarding community to the Second Salemers, a fanatical faction of No-Majs (American for Muggles) bent on eradicating them.  And the powerful, dark wizard Gellert Grindelwald, after wreaking havoc in Europe, has slipped away…and is now nowhere to be found.</p>
+							<div onclick="showPlayer('player-16', 'show')" class="buttons-style button-info">Watch now</div>
+						</div>					
+						</div>			
+					</div>			
+			<div class="loading">
+				<img src="Images/Loading Icon.png">
+				<h3>loading</h3>
+			</div>
+		</div>
+</section>
+<section>
+	<div class="container">
+		<div class="footer">
+			<ul class="nav-footer">
+				<li>About</li>
+				<li>Terms of Service</li>
+				<li>Contact</li>
+			</ul>
+			<div class="footer-logo">
+				<img src="Images/footer-logo.png">
+			</div>
+			<div class="social-icon">
+				<a target="_blank" href="https://Facebook.com/"><img src="Images/Facebook@1X.png"></a>
+				<a target="_blank" href="https://twitter.com/"><img src="Images/Twitter@1X.png"></a>
+				<a target="_blank" href="https://Pinterest.com/"><img src="Images/Pinterest@1X.png"></a>
+				<a target="_blank" href="https://Instagram.com/"><img src="Images/Instagram@1X.png"></a>
+				<a target="_blank" href="https://YouTube.com/"><img src="Images/YouTube@1X.png"></a>
+			</div>
+		</div>
+		<div class="footer-copyright">
+		Copyright © 2017 <span>MOVIE.</span> All Rights Reserved.
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/modal.js"></script>
+<script src="js/find.js"></script>
+<script type="text/javascript" src="js/info.js"></script>
+<script src="js/sort.js"></script>
+<script type="text/javascript" src="js/slider-main.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+</body>
+</html>

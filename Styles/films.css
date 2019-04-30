@@ -1,0 +1,522 @@
+.menu-films {
+	display: flex;
+	padding-top: 30px;
+}
+
+.menu-films-item{
+	font-size: 23px;
+	color: #0aaee4;
+	font-weight: 600;
+	margin: 0 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.menu-films-item:hover{
+	border-bottom: 4px solid #0aaee4;
+}
+
+.menu-films-item:hover img{
+	transform: scaleY(-1);
+}
+
+.genre-menu{
+	position: absolute;
+	margin-top: 20px;
+	top: -130px;
+	transition: 0.7s;
+	background-color: #0aaee4;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.genre-menu div{
+	margin: 5px 0;
+}
+
+.genre:hover .genre-menu{
+	z-index: 4;
+}
+
+.menu-films div img:hover{
+	cursor: pointer;
+}
+
+.genres{
+	background-color: rgba(254, 255, 252, 0.80); 
+	padding: 5px;
+	border-radius: 10px;
+	height: 100px;
+	margin-bottom: 100px;
+	transition: 10s;
+}
+
+.genres-div:hover{
+	border: none;
+}
+
+.genres-div:hover .genres-box{
+	display: block;
+}
+
+.genres-div:hover .genres{
+	margin-bottom: 0;
+}
+
+.genres li{
+	margin: 5px 0;
+	transition: 0.3s;
+	padding: 0.5px;
+	text-align: center;
+	border-radius: 3px; 
+}
+
+.genres li:hover{
+	background-color: #0aaee4;
+	color: #fff;
+}
+
+.genres-box{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	height: 100px;
+	overflow: hidden;
+}
+
+.film-name--genres{
+	margin-right: 40px;
+	margin-top: 10px;
+	color: #47c3f0;
+	font-weight: 600;
+}
+
+.films{
+	background-color: #f5f6f6;
+	position: relative;
+}
+
+.film-name{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 40px;
+	margin-left: 40px;
+	bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.film-name h1{
+	font-weight: 600;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.rating-set{
+	font-size: 19px;
+	font-weight: 600;
+	color: #47c3f0;
+	border-radius: 10px;
+	border:2px solid #0aaee4; 
+	padding:2px 13.5px;
+}
+
+.rating-box{
+	margin-left: 13px;
+
+}
+
+.loading{
+	text-align: center;
+	align-items: center;
+}
+
+.loading h3{
+	margin-top: 10px;
+	font-size: 22px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.sort{
+	margin: 0 0 0 auto;
+}
+
+.sort img{
+	margin-left: 7px; 
+}
+
+.blocks{
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.block{
+	position: relative;
+	width: 24%;
+	height: 500px;
+	background-color: #fff;
+	border-radius: 16px;
+	margin-bottom: 35px;
+}
+
+.block-img1, .block-img2, .block-img3,
+.block-img4, .block-img5, .block-img6,
+.block-img7, .block-img8, .block-img9,
+.block-img10, .block-img11, .block-img12,
+.block-img13, .block-img14, .block-img15,
+.block-img16{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	background-position: center;
+}
+
+.block-img1{
+	background-image: url(../Images/Films/ac.png);
+}
+
+.block-img2{
+	background-image: url(../Images/Films/nysm.png);
+}
+
+.block-img3{
+	background-image: url(../Images/Films/ws.jpg);
+}
+
+.block-img4{
+	background-image: url(../Images/Films/ds.png);
+}
+
+.block-img5{
+	background-image: url(../Images/Films/cw.png);
+}
+
+.block-img6{
+	background-image: url(../Images/Films/fd.png);
+}
+
+.block-img7{
+	background-image: url(../Images/Films/bfg.png);
+}
+
+.block-img8{
+	background-image: url(../Images/Films/id.png);
+}
+
+.block-img9{
+	background-image: url(../Images/Films/m.png);
+}
+
+.block-img10{
+	background-image: url(../Images/Films/ia.png);
+}
+
+.block-img11{
+	background-image: url(../Images/Films/fb.png);
+}
+
+.block-img12{
+	background-image: url(../Images/Films/v.jpg);
+}
+
+.block-img13{
+	background-image: url(../Images/Films/hp.jpg);
+}
+
+.block-img14{
+	background-image: url(../Images/Films/batman.jpg);
+}
+
+.block-img15{
+	background-image: url(../Images/Films/tmnt.jpg);
+	background-position-x: -150px; 
+}
+
+.block-img16{
+	background-image: url(../Images/Films/pop.jpg);
+}
+
+.block-info{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	background-color: rgba(0, 0, 0, 0.60);
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.block-info img{
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.block-info h3{
+	font-size: 20px;
+	margin: 15px 0;
+	text-align: center;
+}
+
+.block-info p{
+	font-size: 20px;
+	border-radius: 3px;
+	border: 1.5px solid #fff;
+	text-align: center;
+	margin: 10px auto;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.block-info:hover{
+	opacity: 1;
+	transition: 0.7s;
+}
+
+.block-info-item{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.80);
+	border-radius: 10px;
+	color: #fff;
+	padding: 30px;
+	opacity: 0;
+	display: none;
+}
+
+.block-info-item p{
+	margin-top: 20px;
+	font-size: 19px;
+}
+
+.block-info-item-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.block-info-item-menu img{
+	cursor: pointer;
+}
+
+.block-info-item-menu img{
+	height: 20px;
+	width: 20px;
+}
+
+.block-info-item-menu-buttons{
+	display: flex;
+	align-items: center;
+}
+
+.block-info-item-menu-buttons div{
+	display: flex;
+	padding-right: 20px; 
+	font-size: 23px;
+	letter-spacing: 1px;
+}
+
+.block-info-item-menu-buttons img{
+	width: 8px;
+	height: 30px;
+}
+
+.block-info-film-name{
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 20px 0 10px 0;
+}
+
+.block-info-film-genres{
+    color: #47c3f0;
+    font-weight: 600;
+}
+
+.block-dlya-flexa{
+	display: flex;
+	align-items: center;
+}
+
+.block-info-rating{
+	font-size: 19px;
+    font-weight: 600;
+    color: #47c3f0;
+    border-radius: 10px;
+    border: 3px solid #0aaee4;
+    padding: 2px 13.5px;
+    margin: 0 0 0 auto;
+    height: 30px;
+}
+
+.button-info{
+	width: 200px;
+	margin-top: 20px;
+}
+
+.block-info-bg1, .block-info-bg2, .block-info-bg3, 
+.block-info-bg4, .block-info-bg5, .block-info-bg6, 
+.block-info-bg7, .block-info-bg8, .block-info-bg9, 
+.block-info-bg10, .block-info-bg11, .block-info-bg12, 
+.block-info-bg13, .block-info-bg14, .block-info-bg15, 
+.block-info-bg16{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	opacity: 0;
+	border-radius: 10px;
+	display: none;
+}
+
+.block-info-bg1{
+	background-image: url(../Images/Films/ac.png); 
+}
+
+.block-info-bg2{
+	background-image: url(../Images/Films/nysm.png);
+}
+
+.block-info-bg3{
+	background-image: url(../Images/Films/ws.jpg);
+}
+
+.block-info-bg4{
+	background-image: url(../Images/Films/ds.png);
+}
+
+.block-info-bg5{
+	background-image: url(../Images/Films/cw.png);
+}
+
+.block-info-bg6{
+	background-image: url(../Images/Films/fd.png);
+}
+
+.block-info-bg7{
+	background-image: url(../Images/Films/bfg.png);
+}
+
+.block-info-bg8{
+	background-image: url(../Images/Films/id.png);
+}
+
+.block-info-bg9{
+	background-image: url(../Images/Films/m.png);
+}
+
+.block-info-bg10{
+	background-image: url(../Images/Films/ia.png);
+}
+
+.block-info-bg12{
+	background-image: url(../Images/Films/v.jpg);
+}
+
+.block-info-bg13{
+	background-image: url(../Images/Films/hp.jpg);
+}
+
+.block-info-bg14{
+	background-image: url(../Images/Films/batman.jpg);
+}
+
+.block-info-bg15{
+	background-image: url(../Images/Films/tmnt.jpg);
+}
+
+.block-info-bg16{
+	background-image: url(../Images/Films/pop.jpg);
+}
+
+@media (max-width: 1871px){
+.film-name h1 {
+	font-size: 21px;
+}
+}
+
+@media (max-width: 1867px){
+.film-name h1 {
+	font-size: 20px;
+}
+.film-name--genres{
+	font-size: 15px;
+}
+}
+
+@media (max-width: 1814px){
+.film-name--genres{
+	font-size: 14px;
+}
+}
+
+@media (max-width: 1776px){
+.film-name h1 {
+	font-size: 19px;
+}
+}
+
+@media (max-width: 1759px){
+.film-name--genres{
+	font-size: 13px;
+}
+}
+
+@media (max-width: 1729px){
+.film-name h1 {
+	font-size: 18px;
+}
+}
+
+@media (max-width: 1704px){
+.film-name--genres{
+	font-size: 12px;
+}
+}
+
+@media (max-width: 1681px){
+.film-name h1 {
+	font-size: 17px;
+}
+}
+
+@media (max-width: 1650px){
+.film-name--genres{
+	font-size: 11px;
+}
+}
+
+@media (max-width: 1650px){
+.block{
+	width: 49%;
+	height: 500px;
+}
+}
+
+@media (max-width: 1010px){
+.block{
+	width: 49%;
+	height: 500px;
+}
+}
+
+@media (max-width: 740px){
+.block{
+	width: 49%;
+	height: 500px;
+}
+}

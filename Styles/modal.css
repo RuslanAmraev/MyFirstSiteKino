@@ -1,0 +1,100 @@
+.modal-in{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	display: none;	
+}
+
+.modal-sign-in-input input{
+ 	width: 100%;
+ 	height: 40px;
+	outline: none;
+	border-radius: 5px;
+	border: 1.5px solid rgba(0, 0, 0, 0.50);
+	text-align: center;
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.modal-backdrop{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.70);
+	z-index: 1;
+	position: absolute;
+}
+
+.modal-inner{
+	width: 100%;
+	max-width: 400px;
+	min-height: 300px;
+	padding: 20px;
+	background-color: #fff;
+	z-index: 2;
+	position: relative;
+	border-radius: 10px;
+	color: #0aaee4;
+	animation: zoom .3s;
+}
+
+.modal-inner h3{
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.modal-close{
+	font-weight: 600;
+	cursor: pointer;
+	width: 15px;
+	position: absolute;
+	right: 25px;
+	color: #000;
+}
+
+.modal-sign-up-input{
+	width: 100%;
+}
+
+.modal-sign-up-input input{
+ 	width: 100%;
+ 	height: 40px;
+	outline: none;
+	border-radius: 5px;
+	border: 1.5px solid rgba(0, 0, 0, 0.50);
+	text-align: center;
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+input::-webkit-input-placeholder{
+	font-weight: 600;
+	font-size: 19px;
+}
+
+.modal-sign-button{
+	color: #fff;
+	background-color: #0aaee4;
+	width: 100px;
+	height: 40px;
+	border-radius: 7px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+
+@keyframes zoom{
+	0%{
+		transform: scale(0.5)
+	}
+	100%{
+		transform: scale(1);
+	}
+}

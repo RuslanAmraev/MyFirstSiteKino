@@ -1,0 +1,16 @@
+.subcribe{
+	height: 505px;
+	justify-content: center;
+	background-image: url(../Images/sub.png);
+}
+
+.subscribe h4{
+	font-size: 55px;
+	text-align: center;
+}
+
+.subscribe div{
+	text-align: center;
+	background-color: #3bb4e0
+	color: #000;
+}

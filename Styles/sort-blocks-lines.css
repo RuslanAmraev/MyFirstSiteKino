@@ -1,0 +1,163 @@
+.block-line{
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background-color: #fff;
+	border-radius: 16px;
+	margin-bottom: 35px;
+}
+
+.block-item--line{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.60);
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	border-radius: 10px;
+	top: 0;
+}
+
+.block-item--line:hover{
+	opacity: 1;
+	transition: 0.7s;
+}
+
+.block-item--line img{
+	height: 60px;
+	width: 60px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.block-item--line h3{
+	font-size: 20px;
+	margin: 15px 0;
+	text-align: center;
+}
+
+.block-film--info{
+	height: 35%;
+	width: 100%;
+	right: 0;
+}
+
+.film-name-line{
+	display: flex;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.film-name-line h1{
+	font-weight: 600;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.film-info{
+	padding: 10px;
+	font-size: 19px;
+}
+
+.film-roles{
+	display: flex;
+	flex-wrap: wrap;
+	height: 65%;
+}
+
+.film-roles img{
+	height: 180px;
+}
+
+.film-roles p{
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+
+.film-roles div{
+	display: flex;
+	flex-wrap: wrap;
+	width: 33%;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.film-roles h2{
+	font-weight: 600;
+	font-size: 19px;
+	width: 100%;
+	text-align: center;
+	height: 0;
+}
+
+.block-line--img1,.block-line--img2,.block-line--img3,
+.block-line--img4,.block-line--img5,.block-line--img6,
+.block-line--img7,.block-line--img8 {
+	width: 40%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	background-position: center;
+	position: relative;
+}
+
+.block-line--img1{
+	background-image: url(../Images/Films/hp.jpg);
+}
+
+.block-line--img2{
+	background-image: url(../Images/Films/nysm.png);
+}
+
+.block-line--img3{
+	background-image: url(../Images/Films/batman.jpg);
+}
+
+.block-line--img4{
+	background-image: url(../Images/Films/ac.png);
+}
+
+.block-line--img5{
+	background-image: url(../Images/Films/fb.png);
+}
+
+.block-line--img6{
+	background-image: url(../Images/Films/ws.jpg);
+}
+
+.block-line--img7{
+	background-image: url(../Images/Films/cw.png);
+}
+
+.block-line--img8{
+	background-image: url(../Images/Films/tmnt.jpg);
+}
+
+
+@media (max-width: 1618px){
+.film-info{
+	padding: 10px;
+	font-size: 17px;
+}
+}
+
+@media (max-width: 1384px){
+.film-info{
+	padding: 10px;
+	font-size: 15px;
+}
+}
+
+@media (max-width: 1132px){
+.film-info{
+	padding: 10px;
+	font-size: 13px;
+}
+}
