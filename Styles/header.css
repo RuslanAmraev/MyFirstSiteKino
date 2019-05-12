@@ -84,3 +84,12 @@
 	margin-left: 0;
 	transition: 0.7s;
 }
+
+
+@media screen and (max-width: 1090px){
+	.header-logo,
+	.header-buttons{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
